@@ -3,13 +3,13 @@
     "track_number": "WBILMTESTTRACK",
     "entry": "WBIL",
     "delivery": {
-      "name": "Test Testov2",
+      "name": "Ref Reference",
       "phone": "+9720000000",
       "zip": "2639809",
-      "city": "Kiryat Mozkin",
-      "address": "Ploshad Mira 15",
-      "region": "Kraiot",
-      "email": "test@gmail.com"
+      "city": "Uganda",
+      "address": "Ploshad 5",
+      "region": "Ocean",
+      "email": "test@test.com"
     },
     "payment": {
       "transaction": "b563feb7b2b84b6test",

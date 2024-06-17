@@ -47,7 +47,7 @@ func main() {
 	defer sc.Close()
 
 	// Публикация JSON данных в канал NATS Streaming
-	if err := sc.Publish(subject, getJsonData("model.json")); err != nil {
+	if err := sc.Publish(subject, getJsonData(os.Args[1])); err != nil {
 		log.Fatalf("Ошибка публикации сообщения в NATS Streaming: %v", err)
 	}
 

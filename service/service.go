@@ -28,7 +28,7 @@ type Order struct {
 
 func initDB() {
 	var err error
-	data, err := os.ReadFile("cred.txt")
+	data, err := os.ReadFile("./cred.txt")
 	if err != nil {
 		log.Fatalf("Ошибка чтения файла: %s", err)
 	}
