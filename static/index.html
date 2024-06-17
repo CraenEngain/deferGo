@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Lookup</title>
+    <script>
+        async function fetchOrder() {
+            const orderId = document.getElementById("orderId").value;
+            const response = await fetch(`/order?id=${orderId}`);
+            const orderData = await response.json();
+            document.getElementById("orderResult").textContent = JSON.stringify(orderData, null, 2);
+        }
+    </script>
+</head>
+<body>
+    <h1>Просмотр заказа</h1>
+    <input type="text" id="orderId" placeholder="Введите id заказа">
+    <button onclick="fetchOrder()">Получить заказ</button>
+    <pre id="orderResult"></pre>
+</body>
+</html>
